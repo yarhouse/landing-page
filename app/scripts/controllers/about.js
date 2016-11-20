@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name personalPortfolioApp.controller:AboutCtrl
+ * @name landingPageApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the personalPortfolioApp
+ * Controller of the landingPageApp
  */
-angular.module('personalPortfolioApp')
+angular.module('landingPageApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

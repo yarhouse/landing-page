@@ -1,7 +1,5 @@
 // Karma configuration
-// http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2016-06-27 using
-// generator-karma 1.0.1
+// Generated on 2016-10-30
 
 module.exports = function(config) {
   'use strict';
@@ -16,7 +14,7 @@ module.exports = function(config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     // as well as any additional frameworks (requirejs/chai/sinon/...)
     frameworks: [
-      "jasmine"
+      'jasmine'
     ],
 
     // list of files / patterns to load in the browser
@@ -24,20 +22,32 @@ module.exports = function(config) {
       // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
-      'bower_components/bootstrap/dist/js/bootstrap.js',
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-aria/angular-aria.js',
+      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-cookies/angular-cookies.js',
+      'bower_components/angular-ellipsis/src/angular-ellipsis.js',
       'bower_components/angular-messages/angular-messages.js',
       'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
+      'bower_components/angular-ui-event/dist/event.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'bower_components/angular-ui-router.stateHelper/statehelper.js',
+      'bower_components/jquery-ui/jquery-ui.js',
+      'bower_components/angular-ui-sortable/sortable.js',
+      'bower_components/bootstrap/dist/js/bootstrap.js',
+      'bower_components/moment/moment.js',
+      'bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
+      'bower_components/numeral/numeral.js',
+      'bower_components/underscore/underscore.js',
+      'bower_components/typed.js/dist/typed.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
-      "app/scripts/**/*.js",
-      "test/mock/**/*.js",
-      "test/spec/**/*.js"
+      'app/scripts/**/*.js',
+      'test/mock/**/*.js',
+      'test/spec/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -56,13 +66,13 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      "PhantomJS"
+      'PhantomJS'
     ],
 
     // Which plugins to enable
     plugins: [
-      "karma-phantomjs-launcher",
-      "karma-jasmine"
+      'karma-phantomjs-launcher',
+      'karma-jasmine'
     ],
 
     // Continuous Integration mode

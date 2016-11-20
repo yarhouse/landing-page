@@ -1,0 +1,106 @@
+// @fa-font-path: "../bower_components/font-awesome-sass/assets/fonts/font-awesome/";
+@import "bootstrap/less/bootstrap.less";
+@import "font-awesome/less/font-awesome.less";
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@icon-font-path: "../bower_components/bootstrap/fonts/";
+@fa-font-path: "../bower_components/font-awesome/fonts/";
+
+body {
+    font-family: 'PT Mono';
+    padding: 0;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .container{
+        height: ~'calc(100vh - 71px)';
+    }
+}
+#draggable {
+    background-color: #111111;
+    color: rgb(0, 209, 0);
+    height:350px;
+    width: 600px;
+    top: 100px;
+    left: 150px;
+    margin-bottom: 0;
+}
+.panel-heading{
+    cursor: move;
+    padding: 3px;
+    position: relative;
+}
+.window-controls{
+    position: absolute;
+   .fa-stack{
+        font-size: .65em;
+        cursor: pointer;
+        .text-danger{color: #F94846;}
+        .text-warning{color: #FEB926;}
+        .text-success{color: #2ACD34;}
+        + .fa-stack{
+            margin-left: -0.75em;
+        }
+   }
+}
+.cli{
+    padding: 10px;
+}
+
+#welcome {
+    white-space:pre-wrap;
+    overflow-wrap: break-word;
+}
+
+#links{
+  display: none;
+  padding-top:20px;
+  text-align: center;
+}
+#links a{background-color: rgb(0, 209, 0);color: rgb(0, 0, 0);padding: 1px}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    #dock{
+        background-color: rgba(150, 150, 150, 0.75);
+        padding: 5px 10px 10px;
+        display: inline-block;
+        border-radius: 15px 15px 0px 0px;
+        ul{
+            margin-bottom: 0px;
+            li{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
